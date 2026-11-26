@@ -1,7 +1,3 @@
-# Copilot code review
+# GitHub Copilot Code Review — exercise run
 
-Exercise run by SFS Labs.
-
-See [the course](https://github.com/skills/copilot-code-review) for instructions.
-
-- 2026-11-26: exercise started (step 0 push).
+Run by SFS Labs on 2026-11-26. Course: https://github.com/skills/copilot-code-review
