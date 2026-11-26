@@ -50,6 +50,32 @@ body {
   font-size: 0.9rem;
 }
 
+/* Announcement banner */
+.announcement-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  background-color: var(--warning-light);
+  border: 1px solid var(--warning);
+  border-left: 5px solid var(--secondary);
+  border-radius: 5px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.announcement-banner p {
+  margin: 0;
+}
+
+.announcement-banner.is-hidden {
+  display: none;
+}
+
 header {
   text-align: center;
   padding: 12px 0;
@@ -129,7 +155,7 @@ section h3 {
   }
 
   .sidebar-filters {
-    width: 200px; /* Reduced from 250px to 200px to make the sidebar narrower */
+    width: 200px;
     position: sticky;
     top: 15px;
     max-height: calc(100vh - 30px);
@@ -485,7 +511,7 @@ footer {
 
 .search-box input {
   flex: 1;
-  min-width: 0; /* Add this to prevent input from overflowing */
+  min-width: 0;
   padding: 6px 10px;
   border: 1px solid var(--border);
   border-right: none;
@@ -502,8 +528,8 @@ footer {
 
 .search-box button {
   width: 36px;
-  height: 100%; /* Make button match input height */
-  min-height: 32px; /* Ensure minimum clickable area */
+  height: 100%;
+  min-height: 32px;
   background: var(--primary);
   color: white;
   border: none;
